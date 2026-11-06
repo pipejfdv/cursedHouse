@@ -1,0 +1,25 @@
+==================================================
+  Cozy Asset Pack - Readme & License
+==================================================
+
+Thank you for downloading this asset pack!
+
+--------------------------------------------------
+  LICENSE & USAGE
+--------------------------------------------------
+- Free for personal and commercial use.
+- You may use these assets in your own games, applications, videos, and other projects, including commercial projects.
+- No credit is required, although credit is always appreciated!
+- You may modify, recolor, resize, or edit the assets for use within your own project.
+
+[ RESTRICTIONS ]
+- You may NOT resell, redistribute, or repackage these assets (individually or as part of another asset pack).
+- You may NOT use these assets to create and sell another asset pack or similar standalone collection.
+- You may NOT use these assets with generative AI tools to create or generate derivative assets for selling/redistributing.
+- You may NOT claim original ownership or imply endorsement.
+
+==================================================
+If you have any feedback, questions, or requests for future updates, feel free to reach out or leave a comment on the download page.
+https://feyza5.itch.io/
+
+Enjoy creating your game!
