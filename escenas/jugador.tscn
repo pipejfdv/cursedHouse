@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxve07tno7qg2"]
 
-[ext_resource type="Script" uid="uid://5wp8mooxk3vp" path="res://gdScripts/personaje_2.gd" id="1_egi3j"]
+[ext_resource type="Script" uid="uid://5wp8mooxk3vp" path="res://gdScripts/jugador.gd" id="1_egi3j"]
 [ext_resource type="Texture2D" uid="uid://c8jndk4vpxe8i" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_003.png" id="2_1p0dt"]
 [ext_resource type="Texture2D" uid="uid://cxmflgtm44qow" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_003_Idle.png" id="3_n4hnp"]
 
@@ -274,7 +274,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Personaje2" type="CharacterBody2D" unique_id=532175875]
+[node name="Jugador" type="CharacterBody2D" unique_id=532175875 groups=["jugador"]]
+motion_mode = 1
 script = ExtResource("1_egi3j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1713926362]

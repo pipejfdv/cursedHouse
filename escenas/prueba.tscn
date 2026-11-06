@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bbsp8d2kk2qrp"]
+
+[ext_resource type="PackedScene" uid="uid://dxve07tno7qg2" path="res://escenas/jugador.tscn" id="1_2jt68"]
+[ext_resource type="PackedScene" uid="uid://cvtajdrortko2" path="res://escenas/pista.tscn" id="2_mdukl"]
+
+[node name="Prueba" type="Node2D" unique_id=870279095]
+
+[node name="Pista" parent="." unique_id=386003400 instance=ExtResource("2_mdukl")]
+position = Vector2(241, 44)
+
+[node name="Jugador" parent="." unique_id=532175875 instance=ExtResource("1_2jt68")]
+position = Vector2(77, 118)

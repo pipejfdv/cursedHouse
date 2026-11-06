@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cvtajdrortko2"]
+
+[ext_resource type="Script" uid="uid://bde3xfc751xqr" path="res://gdScripts/pista.gd" id="1_e0k2m"]
+[ext_resource type="Texture2D" uid="uid://c4n6p1kwnpdg1" path="res://assets/S001_nyknck/S001_nyknck.png" id="2_0gy8l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ml76e"]
+radius = 18.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4ue4"]
+atlas = ExtResource("2_0gy8l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yup2e"]
+atlas = ExtResource("2_0gy8l")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buegv"]
+atlas = ExtResource("2_0gy8l")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vj640"]
+atlas = ExtResource("2_0gy8l")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b52nb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4ue4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yup2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buegv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vj640")
+}],
+"loop": 1,
+"name": &"brillar",
+"speed": 6.0
+}]
+
+[node name="Pista" type="Area2D" unique_id=386003400]
+script = ExtResource("1_e0k2m")
+
+[node name="SpriteObjeto" type="Sprite2D" parent="." unique_id=911234519]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=131977307]
+shape = SubResource("CircleShape2D_ml76e")
+
+[node name="LabelAviso" type="Label" parent="." unique_id=1306880710]
+visible = false
+offset_left = -34.0
+offset_top = -30.0
+offset_right = 67.0
+offset_bottom = -7.0
+scale = Vector2(0.6, 0.6)
+text = "[E] Investigar"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="SpriteBrillo" type="AnimatedSprite2D" parent="." unique_id=1573987380]
+sprite_frames = SubResource("SpriteFrames_b52nb")
+animation = &"brillar"
+autoplay = "brillar"
