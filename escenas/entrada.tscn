@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://daviivik8vqw1"]
+
+[ext_resource type="Texture2D" uid="uid://dggcja42gbjap" path="res://assets/escenas/entrada.png" id="1_lqjpw"]
+
+[node name="Entrada" type="Node2D" unique_id=587469324]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=380979205]
+scale = Vector2(0.17478196, 0.17643231)
+texture = ExtResource("1_lqjpw")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2066221437]
+anchor_mode = 0
