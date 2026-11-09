@@ -1,0 +1,83 @@
+{
+ "version": "2.0",
+ "note": "layers are bottom to top; files get _16px.png or _32px.png; tint = multiply the world by this colour; lightning = flash the screen and play an extras bolt now and then",
+ "recipes": {
+  "hailstorm": {
+   "layers": [
+    "cloud_shadows",
+    "rain_light"
+   ],
+   "tint": "storm",
+   "files": {
+    "cloud_shadows": "overlays/sky_and_wind/cloud_shadows",
+    "rain_light": "overlays/rain/rain_light"
+   }
+  },
+  "light_rain": {
+   "layers": [
+    "rain_light"
+   ],
+   "files": {
+    "rain_light": "overlays/rain/rain_light"
+   }
+  },
+  "snowfall": {
+   "layers": [
+    "snow_light"
+   ],
+   "tint": "fog",
+   "files": {
+    "snow_light": "overlays/snow_and_cold/snow_light"
+   }
+  },
+  "light_snow": {
+   "layers": [
+    "snow_light"
+   ],
+   "files": {
+    "snow_light": "overlays/snow_and_cold/snow_light"
+   }
+  },
+  "autumn_wind": {
+   "layers": [
+    "cloud_shadows",
+    "leaves_autumn",
+    "wind"
+   ],
+   "files": {
+    "cloud_shadows": "overlays/sky_and_wind/cloud_shadows",
+    "leaves_autumn": "overlays/seasons/leaves_autumn",
+    "wind": "overlays/sky_and_wind/wind"
+   }
+  },
+  "summer_night": {
+   "layers": [
+    "fireflies"
+   ],
+   "tint": "night",
+   "files": {
+    "fireflies": "overlays/ambient/fireflies"
+   }
+  },
+  "winter_night": {
+   "layers": [
+    "snow_light"
+   ],
+   "tint": "night",
+   "files": {
+    "snow_light": "overlays/snow_and_cold/snow_light"
+   }
+  }
+ },
+ "tints": {
+  "dawn": "#ffd8c4",
+  "day": "#ffffff",
+  "dusk": "#e8b0c8",
+  "night": "#5a68a8",
+  "storm": "#8a96aa",
+  "fog": "#c8d0d8",
+  "underwater": "#78b4d4",
+  "hell": "#ff9a80",
+  "toxic": "#b8e090"
+ }
+}

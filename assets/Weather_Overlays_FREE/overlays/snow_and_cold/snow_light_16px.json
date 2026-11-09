@@ -1,0 +1,21 @@
+{
+ "variant": "snow_light",
+ "kind": "snow",
+ "px": 16,
+ "width": 128,
+ "height": 128,
+ "frames": 48,
+ "fps": 12,
+ "loop": true,
+ "tiles_x": true,
+ "tiles_y": true,
+ "blend": "mix",
+ "colours": [
+  "#ffffff",
+  "#d6e6f5",
+  "#9fb6cf"
+ ],
+ "tier": "free",
+ "columns": 16,
+ "rows": 3
+}

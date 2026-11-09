@@ -1,0 +1,21 @@
+{
+ "variant": "fireflies",
+ "kind": "motes",
+ "px": 16,
+ "width": 128,
+ "height": 128,
+ "frames": 48,
+ "fps": 12,
+ "loop": true,
+ "tiles_x": true,
+ "tiles_y": true,
+ "blend": "add",
+ "colours": [
+  "#fffbb0",
+  "#e6e05a",
+  "#8fb03a"
+ ],
+ "tier": "free",
+ "columns": 16,
+ "rows": 3
+}

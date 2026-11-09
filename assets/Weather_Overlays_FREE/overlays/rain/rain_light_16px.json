@@ -1,0 +1,21 @@
+{
+ "variant": "rain_light",
+ "kind": "rain",
+ "px": 16,
+ "width": 128,
+ "height": 128,
+ "frames": 16,
+ "fps": 16,
+ "loop": true,
+ "tiles_x": true,
+ "tiles_y": true,
+ "blend": "mix",
+ "colours": [
+  "#e4f2ff",
+  "#9cc4e8",
+  "#5d86b8"
+ ],
+ "tier": "free",
+ "columns": 16,
+ "rows": 1
+}

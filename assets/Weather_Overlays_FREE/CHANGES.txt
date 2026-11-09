@@ -1,0 +1,16 @@
+Pixel Weather Overlays (Free): what's new
+=========================================
+
+2.0
+  - 11 new overlays: lightning flash, sunbeams, cloud shadows, wind, aurora, shooting stars, smoke, hail, acid rain,
+    snow drift and dandelion seeds (38 in total, each at 16 px and 32 px)
+  - lightning bolt strikes (3 shapes, both sizes) to fire over a storm
+  - 7 weather recipes: ready-made stacks like thunderstorm, blizzard, misty morning and summer night, plus
+    time-of-day tints (dawn, dusk, night, storm and more)
+  - Godot 4 weather controller: pick a recipe, press Play; crossfades, tint and lightning included
+  - shader intensity setting: 1 to 3 copies for heavier weather from the same file
+  - dust, pollen, sparkles, fairy dust, embers, bubbles and sprinkles are fuller and easier to see
+  - every 1.x file keeps its name and folder, so you can copy 2.0 straight over your old folder
+
+1.0
+  - first release: 27 overlays at 16 px and 32 px, Godot 4 shader and script

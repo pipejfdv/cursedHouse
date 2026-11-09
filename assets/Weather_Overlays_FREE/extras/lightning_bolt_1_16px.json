@@ -1,0 +1,27 @@
+{
+ "variant": "lightning_bolt",
+ "kind": "bolt",
+ "px": 16,
+ "width": 64,
+ "height": 128,
+ "frames": 8,
+ "fps": 20,
+ "loop": false,
+ "tiles_x": false,
+ "tiles_y": false,
+ "blend": "add",
+ "anchor": "bottom_centre",
+ "strike_frames": [
+  1,
+  2,
+  4
+ ],
+ "colours": [
+  "#ffffff",
+  "#c8d8ff",
+  "#8aa0f0"
+ ],
+ "tier": "free",
+ "columns": 8,
+ "rows": 1
+}
