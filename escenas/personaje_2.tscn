@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://btdre4syrkxb"]
 
+[ext_resource type="Script" uid="uid://pu3gpmctorae" path="res://gdScripts/personaje_2.gd" id="1_0aae0"]
 [ext_resource type="Texture2D" uid="uid://dbf2gpsravi2v" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_001_Idle.png" id="1_2bbni"]
 [ext_resource type="Texture2D" uid="uid://bvijgsqiplxjs" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_001.png" id="1_7munf"]
+[ext_resource type="Texture2D" uid="uid://cy1jff1wmlcf3" path="res://assets/disePropio/Info.png" id="4_qqmwb"]
+[ext_resource type="PackedScene" uid="uid://c4axoww6r11v8" path="res://escenas/area_npc_2d.tscn" id="5_qqmwb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iv7o1"]
 radius = 11.0
@@ -499,6 +502,7 @@ _data = {
 }
 
 [node name="personaje2" type="CharacterBody2D" unique_id=563798635]
+script = ExtResource("1_0aae0")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=800888714]
 texture = ExtResource("1_7munf")
@@ -511,3 +515,10 @@ shape = SubResource("CapsuleShape2D_iv7o1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=882027186]
 libraries/ = SubResource("AnimationLibrary_0aae0")
+autoplay = &"reposo"
+
+[node name="Exclamacion" type="Sprite2D" parent="." unique_id=1138984127]
+position = Vector2(0, -25)
+texture = ExtResource("4_qqmwb")
+
+[node name="AreaNPC2D" parent="." unique_id=2071349242 instance=ExtResource("5_qqmwb")]

@@ -274,6 +274,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_iv7o1"]
+radius = 24.30189
+
 [node name="Jugador" type="CharacterBody2D" unique_id=532175875 groups=["jugador"]]
 scale = Vector2(0.95, 0.95)
 motion_mode = 1
@@ -290,3 +293,10 @@ sprite_frames = SubResource("SpriteFrames_b52nb")
 animation = &"idle_abajo"
 offset = Vector2(0, -24)
 metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1019437837]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=91213189]
+position = Vector2(1.0526316, -13.68421)
+shape = SubResource("CircleShape2D_iv7o1")

@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://7oik6vwiu4s"]
 
 [ext_resource type="Texture2D" uid="uid://f5vuj71u0bfx" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_005.png" id="1_2kcgv"]
+[ext_resource type="Script" uid="uid://dy3m40oq31qnw" path="res://gdScripts/personaje_1.gd" id="1_xik5q"]
 [ext_resource type="Texture2D" uid="uid://c13crfca43cvd" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_005_Idle.png" id="2_5nfxw"]
+[ext_resource type="Texture2D" uid="uid://cy1jff1wmlcf3" path="res://assets/disePropio/Info.png" id="4_vtfbn"]
+[ext_resource type="PackedScene" uid="uid://c4axoww6r11v8" path="res://escenas/area_npc_2d.tscn" id="5_ujxn0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iv7o1"]
 
@@ -494,17 +497,26 @@ _data = {
 }
 
 [node name="Personaje1" type="CharacterBody2D" unique_id=418875070]
+script = ExtResource("1_xik5q")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=874039578]
 position = Vector2(0, -1)
 texture = ExtResource("1_2kcgv")
 hframes = 4
 vframes = 4
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1882090998]
 position = Vector2(0, 9)
 shape = SubResource("CapsuleShape2D_iv7o1")
+metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=581822797]
 libraries/ = SubResource("AnimationLibrary_jt8tj")
 autoplay = &"frente"
+
+[node name="Exclamacion" type="Sprite2D" parent="." unique_id=1995062610]
+position = Vector2(0, -25)
+texture = ExtResource("4_vtfbn")
+
+[node name="AreaNPC2D" parent="." unique_id=2071349242 instance=ExtResource("5_ujxn0")]

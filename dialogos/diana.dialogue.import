@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://brrg2kik7xvvq"
+path="res://.godot/imported/diana.dialogue-e4e939c8f405d901f58972cf9bf807e4.tres"
+
+[deps]
+
+source_file="res://dialogos/diana.dialogue"
+dest_files=["res://.godot/imported/diana.dialogue-e4e939c8f405d901f58972cf9bf807e4.tres"]
+
+[params]
+
+defaults=true
