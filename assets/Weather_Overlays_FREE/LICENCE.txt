@@ -1,0 +1,21 @@
+ASSET LICENCE
+
+Thank you for downloading! This licence covers the free and paid versions of every pack.
+
+YOU MAY
+- Use these assets in any number of games, apps, videos, streams and other projects, commercial or
+  non-commercial, on any platform.
+- Edit, recolour, cut up and combine them with other art or sound.
+- Release your project without crediting us. Credit is appreciated but not required.
+
+YOU MAY NOT
+- Resell, share, re-upload or give away the assets themselves, in whole or in part, edited or not,
+  on their own or inside another asset pack, template, tileset, sound library or art collection.
+- Use the assets, or anything made from them, to train, fine-tune or test AI or machine-learning
+  models, or include them in datasets for that purpose.
+- Mint or sell the assets as NFTs.
+- Claim that you made the original assets.
+
+A team working on one project may share the files among its members for that project.
+
+Questions or a licence that fits a special case: contact us through the itch.io page.

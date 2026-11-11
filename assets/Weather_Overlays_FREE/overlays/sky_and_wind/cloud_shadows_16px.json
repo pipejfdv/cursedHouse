@@ -1,0 +1,21 @@
+{
+ "variant": "cloud_shadows",
+ "kind": "fog",
+ "px": 16,
+ "width": 128,
+ "height": 128,
+ "frames": 64,
+ "fps": 10,
+ "loop": true,
+ "tiles_x": true,
+ "tiles_y": true,
+ "blend": "mix",
+ "colours": [
+  "#141826",
+  "#1c2236",
+  "#1c2236"
+ ],
+ "tier": "free",
+ "columns": 16,
+ "rows": 4
+}

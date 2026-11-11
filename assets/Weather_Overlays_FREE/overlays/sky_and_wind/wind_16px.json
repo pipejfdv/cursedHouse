@@ -1,0 +1,21 @@
+{
+ "variant": "wind",
+ "kind": "gust",
+ "px": 16,
+ "width": 128,
+ "height": 128,
+ "frames": 32,
+ "fps": 12,
+ "loop": true,
+ "tiles_x": true,
+ "tiles_y": true,
+ "blend": "mix",
+ "colours": [
+  "#ffffff",
+  "#d8e6f0",
+  "#a8bccc"
+ ],
+ "tier": "free",
+ "columns": 16,
+ "rows": 2
+}

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dhiypmi3gvril"]
+
+[ext_resource type="PackedScene" uid="uid://dxve07tno7qg2" path="res://escenas/jugador.tscn" id="1_ppmd0"]
+
+[sub_resource type="TileSet" id="TileSet_g2ujb"]
+tile_size = Vector2i(32, 32)
+
+[node name="SalonPrincipal" type="Node2D" unique_id=376234383]
+y_sort_enabled = true
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1489203612]
+tile_set = SubResource("TileSet_g2ujb")
+
+[node name="Muros" type="TileMapLayer" parent="." unique_id=360132607]
+tile_set = SubResource("TileSet_g2ujb")
+
+[node name="Muebles" type="TileMapLayer" parent="." unique_id=1754865558]
+y_sort_enabled = true
+tile_set = SubResource("TileSet_g2ujb")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1754138047]
+anchor_mode = 0
+
+[node name="Jugador" parent="." unique_id=532175875 instance=ExtResource("1_ppmd0")]
+position = Vector2(229, 220)
