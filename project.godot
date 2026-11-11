@@ -14,6 +14,11 @@ config/name="Cursed house"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://d11pxy2e8nmc6"
+CuadroDialogo="*uid://c3yuq0by04f8"
+
 [display]
 
 window/size/viewport_width=480

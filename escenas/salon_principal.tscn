@@ -1,25 +1,149 @@
 [gd_scene format=3 uid="uid://dhiypmi3gvril"]
 
+[ext_resource type="Script" uid="uid://cuuantn6wrchv" path="res://gdScripts/salon_principal.gd" id="1_gd4t4"]
 [ext_resource type="PackedScene" uid="uid://dxve07tno7qg2" path="res://escenas/jugador.tscn" id="1_ppmd0"]
+[ext_resource type="Texture2D" uid="uid://bcu88b2cj2om" path="res://assets/escenas/salon_principal.png" id="2_yap3h"]
+[ext_resource type="Script" uid="uid://4iod1n4qd5yl" path="res://gdScripts/puerta_norte.gd" id="4_ly02a"]
 
-[sub_resource type="TileSet" id="TileSet_g2ujb"]
-tile_size = Vector2i(32, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b52nb"]
+size = Vector2(29.125, 57.75)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_pb3um"]
+a = Vector2(-4, 3)
+b = Vector2(271, 4)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_l6nsn"]
+a = Vector2(390, 74)
+b = Vector2(390, 196)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_26xai"]
+a = Vector2(277, 94)
+b = Vector2(299, 76)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_nb0dp"]
+a = Vector2(162, 95)
+b = Vector2(276, 94)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_c7m54"]
+a = Vector2(138, 115)
+b = Vector2(169, 97)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_y624v"]
+a = Vector2(110, 115)
+b = Vector2(138, 115)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_w21eg"]
+a = Vector2(109, 168)
+b = Vector2(109, 115)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6nsn"]
+size = Vector2(12.5, 49)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_b52nb"]
+a = Vector2(117, 45)
+b = Vector2(220, 45)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_m2pct"]
+a = Vector2(234, 57)
+b = Vector2(276, 57)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ifqix"]
+a = Vector2(378, 108)
+b = Vector2(378, 145)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_hccle"]
+a = Vector2(4, 2)
+b = Vector2(4, 33)
 
 [node name="SalonPrincipal" type="Node2D" unique_id=376234383]
 y_sort_enabled = true
-
-[node name="Suelo" type="TileMapLayer" parent="." unique_id=1489203612]
-tile_set = SubResource("TileSet_g2ujb")
-
-[node name="Muros" type="TileMapLayer" parent="." unique_id=360132607]
-tile_set = SubResource("TileSet_g2ujb")
-
-[node name="Muebles" type="TileMapLayer" parent="." unique_id=1754865558]
-y_sort_enabled = true
-tile_set = SubResource("TileSet_g2ujb")
+script = ExtResource("1_gd4t4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1754138047]
 anchor_mode = 0
+metadata/_edit_lock_ = true
 
 [node name="Jugador" parent="." unique_id=532175875 instance=ExtResource("1_ppmd0")]
-position = Vector2(229, 220)
+position = Vector2(240, 191)
+
+[node name="SalonPrincipal" type="Sprite2D" parent="." unique_id=1669486121]
+scale = Vector2(0.17405522, 0.17578122)
+texture = ExtResource("2_yap3h")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Limites" type="StaticBody2D" parent="." unique_id=318892949]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limites" unique_id=2030659886]
+position = Vector2(105.875, 196.875)
+shape = SubResource("RectangleShape2D_b52nb")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Limites" unique_id=1511606533]
+position = Vector2(124, 194)
+shape = SubResource("SegmentShape2D_pb3um")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Limites" unique_id=1689895748]
+shape = SubResource("SegmentShape2D_l6nsn")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Limites" unique_id=2012788033]
+shape = SubResource("SegmentShape2D_26xai")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Limites" unique_id=2115232895]
+shape = SubResource("SegmentShape2D_nb0dp")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Limites" unique_id=191785958]
+shape = SubResource("SegmentShape2D_c7m54")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Limites" unique_id=1456358808]
+shape = SubResource("SegmentShape2D_y624v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Limites" unique_id=1951757370]
+position = Vector2(-5, 0)
+shape = SubResource("SegmentShape2D_w21eg")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Limites" unique_id=1618513823]
+position = Vector2(386, 124.5)
+shape = SubResource("RectangleShape2D_l6nsn")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Limites" unique_id=1562013065]
+position = Vector2(175, 30)
+shape = SubResource("SegmentShape2D_b52nb")
+
+[node name="PuertaNorte" type="Area2D" parent="." unique_id=1515333755]
+script = ExtResource("4_ly02a")
+sala_destino = "uid://bsg2wvkhswdg6"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuertaNorte" unique_id=1463979744]
+position = Vector2(85, 19)
+shape = SubResource("SegmentShape2D_m2pct")
+
+[node name="PuertaOeste" type="Area2D" parent="." unique_id=1179913125]
+script = ExtResource("4_ly02a")
+sala_destino = "uid://cromrgdr81ts8"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuertaOeste" unique_id=142338282]
+shape = SubResource("SegmentShape2D_ifqix")
+
+[node name="PuertaEste" type="Area2D" parent="." unique_id=1609510815]
+script = ExtResource("4_ly02a")
+sala_destino = "uid://f2ycdpktqh1g"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuertaEste" unique_id=1217502889]
+position = Vector2(103, 113)
+shape = SubResource("SegmentShape2D_hccle")
+
+[node name="Spawns" type="Node2D" parent="." unique_id=514451944]
+
+[node name="DesdeCocina" type="Marker2D" parent="Spawns" unique_id=1547278061]
+position = Vector2(122, 137)
+
+[node name="DesdeBiblioteca" type="Marker2D" parent="Spawns" unique_id=114211364]
+position = Vector2(339, 89)
+
+[node name="DesdeDormitorio" type="Marker2D" parent="Spawns" unique_id=904065696]
+position = Vector2(362, 148)
