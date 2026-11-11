@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c3yuq0by04f8"]
+
+[ext_resource type="Script" uid="uid://1xmksw846sb7" path="res://gdScripts/cuadro_dialogo.gd" id="1_lhykg"]
+
+[node name="CuadroDialogo" type="CanvasLayer" unique_id=547035056]
+process_mode = 3
+layer = 10
+script = ExtResource("1_lhykg")
+
+[node name="PanelFondo" type="PanelContainer" parent="." unique_id=496984888]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = -100.0
+offset_right = -30.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelFondo" unique_id=372676351]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelFondo/MarginContainer" unique_id=2057240772]
+layout_mode = 2
+
+[node name="LabelTitulo" type="Label" parent="PanelFondo/MarginContainer/VBoxContainer" unique_id=881968345]
+layout_mode = 2
+text = "PISTA ENCONTRADA"
+horizontal_alignment = 1
+
+[node name="LabelTexto" type="Label" parent="PanelFondo/MarginContainer/VBoxContainer" unique_id=265542786]
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="LabelContinuar" type="Label" parent="PanelFondo/MarginContainer/VBoxContainer" unique_id=1369293804]
+layout_mode = 2
+text = "[E] Continuar"

@@ -237,6 +237,8 @@ shape = SubResource("SegmentShape2D_gtd6w")
 [node name="SalonPrincipal" type="Area2D" parent="." unique_id=1575581492]
 script = ExtResource("2_efew5")
 sala_destino = "uid://dhiypmi3gvril"
+punto_destino = "DesdeCocina"
+mirar_hacia = "derecha"
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SalonPrincipal" unique_id=127301494]
@@ -244,4 +246,4 @@ position = Vector2(387, 131)
 shape = SubResource("SegmentShape2D_itojh")
 
 [node name="Jugador" parent="." unique_id=532175875 instance=ExtResource("3_p0esl")]
-position = Vector2(440, 200)
+position = Vector2(441, 195)
