@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://kfulpeks8nwa" path="res://assets/escenas/dormitorio.png" id="1_7wpfg"]
 [ext_resource type="Script" uid="uid://4iod1n4qd5yl" path="res://gdScripts/puerta_norte.gd" id="2_weouu"]
 [ext_resource type="PackedScene" uid="uid://dxve07tno7qg2" path="res://escenas/jugador.tscn" id="3_u4ejg"]
+[ext_resource type="PackedScene" uid="uid://cvtajdrortko2" path="res://escenas/pista.tscn" id="4_75rno"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_b52nb"]
 a = Vector2(53, 158)
@@ -166,7 +167,6 @@ shape = SubResource("SegmentShape2D_hccle")
 script = ExtResource("2_weouu")
 sala_destino = "uid://dhiypmi3gvril"
 punto_destino = "DesdeDormitorio"
-mirar_hacia = "izquierda"
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SalonPrincipal" unique_id=948837045]
@@ -175,3 +175,9 @@ shape = SubResource("SegmentShape2D_aldjx")
 
 [node name="Jugador" parent="." unique_id=532175875 instance=ExtResource("3_u4ejg")]
 position = Vector2(40.000004, 192)
+
+[node name="Pista" parent="." unique_id=386003400 instance=ExtResource("4_75rno")]
+position = Vector2(147, 161)
+id_pista = "sello_tiza_elena"
+titulo_pista = "Sello de Tiza Invertido"
+texto_pista = "Elena asegura haber estado protegida, pero los símbolos pertenecen a una invocación impura, no a un cerco de defensa. Elena es la culpable."

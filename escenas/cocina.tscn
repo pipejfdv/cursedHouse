@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ds6222fe8nju3" path="res://assets/escenas/cocina.png" id="1_3xwhu"]
 [ext_resource type="Script" uid="uid://4iod1n4qd5yl" path="res://gdScripts/puerta_norte.gd" id="2_efew5"]
 [ext_resource type="PackedScene" uid="uid://dxve07tno7qg2" path="res://escenas/jugador.tscn" id="3_p0esl"]
+[ext_resource type="PackedScene" uid="uid://cvtajdrortko2" path="res://escenas/pista.tscn" id="4_65fps"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_b52nb"]
 a = Vector2(124, 57)
@@ -238,7 +239,6 @@ shape = SubResource("SegmentShape2D_gtd6w")
 script = ExtResource("2_efew5")
 sala_destino = "uid://dhiypmi3gvril"
 punto_destino = "DesdeCocina"
-mirar_hacia = "derecha"
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SalonPrincipal" unique_id=127301494]
@@ -247,3 +247,9 @@ shape = SubResource("SegmentShape2D_itojh")
 
 [node name="Jugador" parent="." unique_id=532175875 instance=ExtResource("3_p0esl")]
 position = Vector2(441, 195)
+
+[node name="Pista" parent="." unique_id=386003400 instance=ExtResource("4_65fps")]
+position = Vector2(395, 144)
+id_pista = "agua_bendita_mateo"
+titulo_pista = "Agua Bendita Rota"
+texto_pista = "Restos de un frasco de agua consagrada intacto durante la noche. La barrera selló la entrada; ningún ente pudo acceder por aquí. Mateo queda descartado."
