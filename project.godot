@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 
 Global="*uid://d11pxy2e8nmc6"
 CuadroDialogo="*uid://c3yuq0by04f8"
+MenuAcusacion="*uid://dxlr3efu8c8bj"
 
 [display]
 

@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dxve07tno7qg2" path="res://escenas/jugador.tscn" id="1_ppmd0"]
 [ext_resource type="Texture2D" uid="uid://bcu88b2cj2om" path="res://assets/escenas/salon_principal.png" id="2_yap3h"]
 [ext_resource type="Script" uid="uid://4iod1n4qd5yl" path="res://gdScripts/puerta_norte.gd" id="4_ly02a"]
+[ext_resource type="Script" uid="uid://bqs4yudfb2bob" path="res://gdScripts/puerta_final.gd" id="5_ly02a"]
+[ext_resource type="Texture2D" uid="uid://c4n6p1kwnpdg1" path="res://assets/S001_nyknck/S001_nyknck.png" id="6_qu44k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b52nb"]
 size = Vector2(29.125, 57.75)
@@ -54,6 +56,44 @@ b = Vector2(378, 145)
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_hccle"]
 a = Vector2(4, 2)
 b = Vector2(4, 33)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b52nb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cxnd"]
+atlas = ExtResource("6_qu44k")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x316"]
+atlas = ExtResource("6_qu44k")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrvlx"]
+atlas = ExtResource("6_qu44k")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7d0w"]
+atlas = ExtResource("6_qu44k")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b52nb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cxnd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x316")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrvlx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7d0w")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 6.0
+}]
 
 [node name="SalonPrincipal" type="Node2D" unique_id=376234383]
 y_sort_enabled = true
@@ -147,3 +187,17 @@ position = Vector2(339, 89)
 
 [node name="DesdeDormitorio" type="Marker2D" parent="Spawns" unique_id=904065696]
 position = Vector2(362, 148)
+
+[node name="PuertaFinal" type="Area2D" parent="." unique_id=551819033]
+script = ExtResource("5_ly02a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuertaFinal" unique_id=1654497491]
+position = Vector2(243, 143)
+shape = SubResource("CircleShape2D_b52nb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PuertaFinal" unique_id=512040143]
+position = Vector2(243.00002, 143)
+scale = Vector2(0.6875, 0.625)
+sprite_frames = SubResource("SpriteFrames_b52nb")
+autoplay = "default"
+frame_progress = 0.926504

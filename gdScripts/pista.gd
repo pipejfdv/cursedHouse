@@ -8,6 +8,9 @@ var jugador_cerca: bool = false
 var prompt_label: Label = null
 
 func _ready() -> void:
+	if Global.ha_recogido_pista(id_pista):
+		queue_free()
+		return
 	# Busca automáticamente el Label hijo dentro de la pista
 	for hijo in get_children():
 		if hijo is Label:
