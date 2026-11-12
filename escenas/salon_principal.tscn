@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://4iod1n4qd5yl" path="res://gdScripts/puerta_norte.gd" id="4_ly02a"]
 [ext_resource type="PackedScene" uid="uid://7oik6vwiu4s" path="res://escenas/personaje_1.tscn" id="6_5cxnd"]
 [ext_resource type="PackedScene" uid="uid://btdre4syrkxb" path="res://escenas/personaje_2.tscn" id="6_qu44k"]
+[ext_resource type="PackedScene" uid="uid://325g3k5o3q17" path="res://escenas/personaje_3.tscn" id="7_5cxnd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b52nb"]
 size = Vector2(29.125, 57.75)
@@ -186,3 +187,6 @@ rotates = false
 [node name="Personaje1" parent="Path2D2/PathFollow2D" unique_id=418875070 instance=ExtResource("6_5cxnd")]
 position = Vector2(7.6441803, -17.162933)
 rotation = 1.549966
+
+[node name="personaje3" parent="." unique_id=1961409241 instance=ExtResource("7_5cxnd")]
+position = Vector2(242, 137)

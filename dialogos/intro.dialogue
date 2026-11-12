@@ -1,0 +1,8 @@
+~ start
+Narrador: [speed=0.3] En una noche de halloween un grupo de amigos decidieron visitar una casa abandonada
+Narrador: [speed=0.3] Cuando de repente [wait=2] ... todo se oscurecio, con una oscuridad tan aterrada.
+Narrador: [speed=0.3] Cuando por fin se podria ver algo aparecio algo inesperado.
+Narrador: [wait=2] Vieron en el centro de la casa a uno de sus amigos [wave] muerto [/wave]
+Narrador: Cuando intentaron escapar la puerta estaba bloqueda.
+Narrador: Ahora tu tarea es ayudar a tus amigos a poder escapar y descibrir el culpable de lo sucedido
+=> END

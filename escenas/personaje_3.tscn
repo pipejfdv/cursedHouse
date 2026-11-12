@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://325g3k5o3q17"]
 
 [ext_resource type="Texture2D" uid="uid://05e1kxgvpkp7" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_006_Idle.png" id="1_0ew77"]
+[ext_resource type="Texture2D" uid="uid://cduqcn4a0uvr5" path="res://assets/disePropio/blood-removebg-preview.png" id="1_l3bpl"]
 [ext_resource type="Texture2D" uid="uid://dtmuedpesgvp6" path="res://assets/Free Character Sprites - Fantasy Dreamland/32x32/Char_006.png" id="2_l3bpl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iv7o1"]
@@ -495,6 +496,11 @@ _data = {
 }
 
 [node name="personaje3" type="CharacterBody2D" unique_id=1961409241]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=876996890]
+position = Vector2(19, 46)
+scale = Vector2(0.4266917, 0.5260001)
+texture = ExtResource("1_l3bpl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1728322778]
 texture = ExtResource("1_0ew77")
