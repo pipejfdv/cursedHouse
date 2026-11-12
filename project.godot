@@ -69,10 +69,6 @@ mover_derecha={
 ]
 }
 
-[internationalization]
-
-locale/translations_pot_files=PackedStringArray("res://dialogos/diana.dialogue", "res://dialogos/julian.dialogue")
-
 [physics]
 
 3d/physics_engine="Jolt Physics"

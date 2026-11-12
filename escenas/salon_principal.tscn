@@ -57,6 +57,18 @@ b = Vector2(378, 145)
 a = Vector2(4, 2)
 b = Vector2(4, 33)
 
+[sub_resource type="Curve2D" id="Curve2D_i7d0w"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 196, 112, 0, 0, 0, 0, 196, 184, 0, 0, 0, 0, 195, 113)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_5cxnd"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 318, 160, 0, 0, 0, 0, 319, 112, 0, 0, 0, 0, 340, 131, 0, 0, 0, 0, 318, 160)
+}
+point_count = 4
+
 [node name="SalonPrincipal" type="Node2D" unique_id=376234383]
 y_sort_enabled = true
 script = ExtResource("1_gd4t4")
@@ -150,8 +162,27 @@ position = Vector2(339, 89)
 [node name="DesdeDormitorio" type="Marker2D" parent="Spawns" unique_id=904065696]
 position = Vector2(362, 148)
 
-[node name="personaje2" parent="." unique_id=563798635 instance=ExtResource("6_qu44k")]
-position = Vector2(178, 122)
+[node name="Path2D" type="Path2D" parent="." unique_id=190492391]
+curve = SubResource("Curve2D_i7d0w")
+metadata/_edit_lock_ = true
 
-[node name="Personaje1" parent="." unique_id=418875070 instance=ExtResource("6_5cxnd")]
-position = Vector2(301, 152)
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=869867071]
+position = Vector2(196, 112)
+rotation = 1.5707964
+rotates = false
+
+[node name="personaje2" parent="Path2D/PathFollow2D" unique_id=563798635 instance=ExtResource("6_qu44k")]
+position = Vector2(-1.0384191, -0.96006584)
+rotation = -1.6099919
+
+[node name="Path2D2" type="Path2D" parent="." unique_id=137382261]
+curve = SubResource("Curve2D_5cxnd")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2" unique_id=1467417488]
+position = Vector2(318, 160)
+rotation = -1.549966
+rotates = false
+
+[node name="Personaje1" parent="Path2D2/PathFollow2D" unique_id=418875070 instance=ExtResource("6_5cxnd")]
+position = Vector2(7.6441803, -17.162933)
+rotation = 1.549966
