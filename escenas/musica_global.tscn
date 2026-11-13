@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://2b7qouf3r3mg"]
+
+[ext_resource type="AudioStream" uid="uid://byva341yf6x7e" path="res://assets/Audio/tema_fondo.mp3" id="1_lndec"]
+
+[node name="MusicaGlobal" type="AudioStreamPlayer" unique_id=1768285750]
+process_mode = 3
+stream = ExtResource("1_lndec")
+autoplay = true

@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://d2oi0x6vm1vud"]
+
+[ext_resource type="Script" uid="uid://dbl3ipqar22rq" path="res://gdScripts/puzzle_biblioteca.gd" id="1_mcpgg"]
+
+[node name="PuzzleBiblioteca" type="CanvasLayer" unique_id=119854788]
+process_mode = 3
+layer = 12
+script = ExtResource("1_mcpgg")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1634564619]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -90.0
+offset_right = 170.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=731476119]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=725915234]
+layout_mode = 2
+alignment = 1
+
+[node name="LabelAcertijo" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=646444977]
+layout_mode = 2
+text = "\"La plata pura solo se revela a quien cuenta las llamas que aún resisten la oscuridad.\""
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1110971566]
+layout_mode = 2
+
+[node name="HBoxDiales" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=189485335]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Columna1" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales" unique_id=401805661]
+layout_mode = 2
+
+[node name="BtnSubir1" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna1" unique_id=965109121]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▲"
+
+[node name="Num1" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna1" unique_id=1330282555]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="BtnBajar1" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna1" unique_id=2140858016]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▼"
+
+[node name="Columna2" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales" unique_id=705792264]
+layout_mode = 2
+
+[node name="BtnSubir2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna2" unique_id=252418883]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▲"
+
+[node name="Num2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna2" unique_id=1088410776]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+
+[node name="BtnBajar2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna2" unique_id=1171251067]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▼"
+
+[node name="Columna3" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales" unique_id=837591453]
+layout_mode = 2
+
+[node name="BtnSubir3" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna3" unique_id=1604319546]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▲"
+
+[node name="Num3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna3" unique_id=695107942]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+
+[node name="BtnBajar3" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxDiales/Columna3" unique_id=1472146914]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▼"
+
+[node name="LabelFeedback" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=835874064]
+unique_name_in_owner = true
+modulate = Color(1, 0.52, 0.52, 1)
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="HBoxBotones" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1978726741]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="BtnAbrir" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxBotones" unique_id=1277314469]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Abrir Cerrojo"
+
+[node name="BtnCerrar" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxBotones" unique_id=939060483]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Cerrar"

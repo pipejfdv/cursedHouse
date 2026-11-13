@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c3yuq0by04f8"]
 
 [ext_resource type="Script" uid="uid://1xmksw846sb7" path="res://gdScripts/cuadro_dialogo.gd" id="1_lhykg"]
+[ext_resource type="AudioStream" uid="uid://cdt8otvbs2d5y" path="res://assets/Audio/resident-evil-2-inventario.mp3" id="2_ray1a"]
 
 [node name="CuadroDialogo" type="CanvasLayer" unique_id=547035056]
 process_mode = 3
@@ -37,3 +38,6 @@ autowrap_mode = 2
 [node name="LabelContinuar" type="Label" parent="PanelFondo/MarginContainer/VBoxContainer" unique_id=1369293804]
 layout_mode = 2
 text = "[E] Continuar"
+
+[node name="SonidoPista" type="AudioStreamPlayer" parent="." unique_id=556467047]
+stream = ExtResource("2_ray1a")

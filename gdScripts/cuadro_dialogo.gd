@@ -3,6 +3,7 @@ extends CanvasLayer
 @onready var panel: Control = $PanelFondo
 @onready var label_titulo: Label = $PanelFondo/MarginContainer/VBoxContainer/LabelTitulo
 @onready var label_texto: Label = $PanelFondo/MarginContainer/VBoxContainer/LabelTexto
+@onready var sonido_abrir: AudioStreamPlayer = $SonidoPista
 
 var visible_activo: bool = false
 var puede_cerrar: bool = false
@@ -11,6 +12,10 @@ func _ready() -> void:
 	panel.hide()
 
 func mostrar_pista(titulo: String, descripcion: String) -> void:
+	# Reproduce el efecto de sonido de inspección/apertura
+	if sonido_abrir and sonido_abrir.stream:
+		sonido_abrir.play(0.80) # Ajusta este valor (ej. 0.2, 0.4, 0.5) según cuánto silencio tenga tu audio
+	
 	label_titulo.text = titulo
 	label_texto.text = descripcion
 	panel.show()

@@ -156,4 +156,5 @@ position = Vector2(327.00003, 206.00002)
 position = Vector2(162, 172)
 id_pista = "relicario_julian"
 titulo_pista = "Relicario de Plata Pura"
-texto_pista = "Un relicario que perteneció a Julián. La plata se mantiene fría y limpia. Un poseído demoníaco la habría calcinado al tacto. Julián queda descartado."
+texto_pista = "Un relicario que perteneció a Julián. La plata se mantiene fría y limpia. Un poseído demoníaco la habría calcinado al tacto."
+tipo_puzzle = "cofre_velas"
