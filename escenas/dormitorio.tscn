@@ -180,4 +180,5 @@ position = Vector2(40.000004, 192)
 position = Vector2(147, 161)
 id_pista = "sello_tiza_elena"
 titulo_pista = "Sello de Tiza Invertido"
-texto_pista = "Elena asegura haber estado protegida, pero los símbolos pertenecen a una invocación impura, no a un cerco de defensa. Elena es la culpable."
+texto_pista = "Elena asegura haber estado protegida, pero los símbolos pertenecen a una invocación impura, no a un cerco de defensa."
+tipo_puzzle = "sello_tiza"

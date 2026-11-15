@@ -3,7 +3,7 @@ extends Area2D
 @export var id_pista: String = ""
 @export var titulo_pista: String = "Pista Encontrada"
 @export_multiline var texto_pista: String = "Descripción de la pista."
-@export_enum("ninguno", "cofre_velas") var tipo_puzzle: String = "ninguno"
+@export_enum("ninguno", "cofre_velas", "secuencia_agua", "sello_tiza") var tipo_puzzle: String = "ninguno"
 
 var jugador_cerca: bool = false
 var prompt_label: Label = null
@@ -40,10 +40,15 @@ func _on_body_exited(body: Node2D) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if jugador_cerca and event.is_action_pressed("interactuar"):
 		get_viewport().set_input_as_handled()
-		if tipo_puzzle == "cofre_velas":
-			PuzzleBiblioteca.abrir_puzzle(id_pista, titulo_pista, texto_pista, self)
-		else:
-			CuadroDialogo.mostrar_pista(titulo_pista, texto_pista)
-			if Global.has_method("registrar_pista") and id_pista != "":
-				Global.registrar_pista(id_pista)
-			queue_free()
+		match tipo_puzzle:
+			"cofre_velas":
+				PuzzleBiblioteca.abrir_puzzle(id_pista, titulo_pista, texto_pista, self)
+			"secuencia_agua":
+				PuzzleCocina.abrir_puzzle(id_pista, titulo_pista, texto_pista, self)
+			"sello_tiza":
+				PuzzleDormitorio.abrir_puzzle(id_pista, titulo_pista, texto_pista, self)
+			_:
+				CuadroDialogo.mostrar_pista(titulo_pista, texto_pista)
+				if Global.has_method("registrar_pista") and id_pista != "":
+					Global.registrar_pista(id_pista)
+				queue_free()

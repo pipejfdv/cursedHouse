@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://b7vitp5uhsajk"]
+
+[ext_resource type="Script" uid="uid://cgjpmpxv87bqp" path="res://gdScripts/puzzle_dormitorio.gd" id="1_nvk4h"]
+
+[node name="PuzzleDormitorio" type="CanvasLayer" unique_id=1999806041]
+process_mode = 3
+layer = 12
+script = ExtResource("1_nvk4h")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=2135593836]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -90.0
+offset_right = 170.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1446573148]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=2055061925]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="LabelInstruccion" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=2035013434]
+layout_mode = 2
+text = "Alinea los tres anillos del sello de tiza hacia el Norte (▲) para revelar su verdadera forma."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxAnillos" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=546808087]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="VBoxExt" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos" unique_id=99662351]
+layout_mode = 2
+
+[node name="TituloExt" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxExt" unique_id=2031756668]
+layout_mode = 2
+text = "Anillo Exterior"
+horizontal_alignment = 1
+
+[node name="SimboloExt" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxExt" unique_id=1574814064]
+unique_name_in_owner = true
+layout_mode = 2
+text = "◄"
+horizontal_alignment = 1
+
+[node name="BtnGirarExt" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxExt" unique_id=1945919763]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Rotar
+"
+
+[node name="VBoxMed" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos" unique_id=1567139149]
+layout_mode = 2
+
+[node name="TituloMed" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxMed" unique_id=766908469]
+layout_mode = 2
+text = "Anillo Medio"
+horizontal_alignment = 1
+
+[node name="SimboloMed" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxMed" unique_id=217404733]
+unique_name_in_owner = true
+layout_mode = 2
+text = "▼"
+horizontal_alignment = 1
+
+[node name="BtnGirarMed" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxMed" unique_id=1006976420]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Rotar"
+
+[node name="VBoxInt" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos" unique_id=1661938073]
+layout_mode = 2
+
+[node name="TituloInt" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxInt" unique_id=1677485343]
+layout_mode = 2
+text = "Anillo Interior"
+horizontal_alignment = 1
+
+[node name="SimboloInt" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxInt" unique_id=1936340547]
+unique_name_in_owner = true
+layout_mode = 2
+text = "►"
+horizontal_alignment = 1
+
+[node name="BtnGirarInt" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxAnillos/VBoxInt" unique_id=418399394]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Rotar"
+
+[node name="LabelEstado" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1464028288]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="HBoxBotones" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1431370801]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="BtnVerificar" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxBotones" unique_id=1458831453]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reconstruir Sello"
+
+[node name="BtnCerrar" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxBotones" unique_id=516710414]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Cerrar"

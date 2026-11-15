@@ -252,4 +252,5 @@ position = Vector2(441, 195)
 position = Vector2(395, 144)
 id_pista = "agua_bendita_mateo"
 titulo_pista = "Agua Bendita Rota"
-texto_pista = "Restos de un frasco de agua consagrada intacto durante la noche. La barrera selló la entrada; ningún ente pudo acceder por aquí. Mateo queda descartado."
+texto_pista = "Restos de un frasco de agua consagrada intacto durante la noche. La barrera selló la entrada; ningún ente pudo acceder por aquí."
+tipo_puzzle = "secuencia_agua"
