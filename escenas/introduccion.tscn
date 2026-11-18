@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://c162cgjopeb1j"]
+
+[ext_resource type="Script" uid="uid://tuvd4qk7qgbt" path="res://gdScripts/introduccion.gd" id="1_xnuyx"]
+[ext_resource type="PackedScene" uid="uid://dxve07tno7qg2" path="res://escenas/jugador.tscn" id="2_xnuyx"]
+[ext_resource type="Texture2D" uid="uid://bcu88b2cj2om" path="res://assets/escenas/salon_principal.png" id="3_jtp85"]
+[ext_resource type="PackedScene" uid="uid://px8re5qn7iup" path="res://escenas/personaje_4.tscn" id="5_jtp85"]
+[ext_resource type="PackedScene" uid="uid://btdre4syrkxb" path="res://escenas/personaje_2.tscn" id="6_ddtka"]
+[ext_resource type="PackedScene" uid="uid://325g3k5o3q17" path="res://escenas/personaje_3.tscn" id="7_384w1"]
+[ext_resource type="PackedScene" uid="uid://7oik6vwiu4s" path="res://escenas/personaje_1.tscn" id="8_g0xtv"]
+
+[sub_resource type="Curve2D" id="Curve2D_jtp85"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 191, 192, 0, 0, 0, 0, 298, 186, 0, 0, 0, 0, 307, 144)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_ddtka"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 197, 136, 0, 0, 0, 0, 205, 159, 0, 0, 0, 0, 210, 170)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_384w1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 326, 140, 0, 0, 0, 0, 250, 131, 0, 0, 0, 0, 246, 131)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_g0xtv"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 169, 146, 0, 0, 0, 0, 177, 95, 0, 0, 0, 0, 177, 95)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_gi03i"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 316, 177, 0, 0, 0, 0, 270, 154, 0, 0, 0, 0, 269, 154)
+}
+point_count = 3
+
+[node name="introduccion" type="Node2D" unique_id=69819977]
+script = ExtResource("1_xnuyx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=714515128]
+position = Vector2(241.06248, 133.5)
+scale = Vector2(0.17437316, 0.1751302)
+texture = ExtResource("3_jtp85")
+
+[node name="Jugador" parent="." unique_id=532175875 instance=ExtResource("2_xnuyx")]
+position = Vector2(187.00002, 201)
+
+[node name="Personaje1" parent="." unique_id=418875070 instance=ExtResource("8_g0xtv")]
+position = Vector2(200, 124)
+
+[node name="personaje2" parent="." unique_id=563798635 instance=ExtResource("6_ddtka")]
+position = Vector2(331, 129)
+
+[node name="personaje3" parent="." unique_id=1961409241 instance=ExtResource("7_384w1")]
+position = Vector2(168, 135)
+
+[node name="personaje4" parent="." unique_id=2012625665 instance=ExtResource("5_jtp85")]
+position = Vector2(317, 164)
+
+[node name="jugadorPath2D" type="Path2D" parent="." unique_id=2106717843]
+curve = SubResource("Curve2D_jtp85")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="jugadorPath2D" unique_id=530459118]
+position = Vector2(191, 192)
+rotation = -0.056016106
+rotates = false
+loop = false
+
+[node name="p1Path2D" type="Path2D" parent="." unique_id=1180256618]
+position = Vector2(5, 6)
+curve = SubResource("Curve2D_ddtka")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="p1Path2D" unique_id=2126250197]
+position = Vector2(197, 136)
+rotation = 1.2627436
+rotates = false
+loop = false
+
+[node name="p2Path2D" type="Path2D" parent="." unique_id=2085841075]
+curve = SubResource("Curve2D_384w1")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="p2Path2D" unique_id=1472252455]
+position = Vector2(326, 140)
+rotation = -3.0237205
+rotates = false
+loop = false
+
+[node name="p3Path2D" type="Path2D" parent="." unique_id=805922980]
+curve = SubResource("Curve2D_g0xtv")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="p3Path2D" unique_id=983280600]
+position = Vector2(169, 146)
+rotation = -1.4152015
+rotates = false
+loop = false
+
+[node name="p4Path2D" type="Path2D" parent="." unique_id=675097278]
+curve = SubResource("Curve2D_gi03i")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="p4Path2D" unique_id=2038378238]
+position = Vector2(316, 177)
+rotation = -2.6779451
+rotates = false
+loop = false
