@@ -25,14 +25,10 @@ func cerrar_menu() -> void:
 
 func _on_acusar_incorrecto(sospechoso: String, razon: String) -> void:
 	cerrar_menu()
-	CuadroDialogo.mostrar_pista(
-		"ERROR FATAL", 
-		"Acusaste a " + sospechoso + ". " + razon + "\nEl verdadero demonio te consume entre las sombras."
-	)
+	Global.victoria_alcanzada = false
+	get_tree().change_scene_to_file("res://escenas/pantalla_final.tscn")
 
 func _on_acusar_elena() -> void:
 	cerrar_menu()
-	CuadroDialogo.mostrar_pista(
-		"CULPABLE DESCUBIERTA", 
-		"El sello de tiza invertido expuso su trampa. Elena emite un alarido gutural y la energía demoníaca se desvanece de la mansión. ¡Las cadenas de la entrada se han roto!"
-	)
+	Global.victoria_alcanzada = true
+	get_tree().change_scene_to_file("res://escenas/pantalla_final.tscn")
