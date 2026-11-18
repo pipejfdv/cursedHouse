@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dx3k26665ppet"
+path="res://.godot/imported/jugador.dialogue-81cd8110817f3d8029921396c0037bca.tres"
+
+[deps]
+
+source_file="res://assets/dialogos/jugador.dialogue"
+dest_files=["res://.godot/imported/jugador.dialogue-81cd8110817f3d8029921396c0037bca.tres"]
+
+[params]
+
+defaults=true

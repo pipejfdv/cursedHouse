@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bl7q4jtukmlmj"
+path="res://.godot/imported/personaje3.dialogue-d927ac4c706349d2e9666874c0a25c21.tres"
+
+[deps]
+
+source_file="res://assets/dialogos/personaje3.dialogue"
+dest_files=["res://.godot/imported/personaje3.dialogue-d927ac4c706349d2e9666874c0a25c21.tres"]
+
+[params]
+
+defaults=true

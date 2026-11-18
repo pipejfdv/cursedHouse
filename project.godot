@@ -21,8 +21,12 @@ CuadroDialogo="*uid://c3yuq0by04f8"
 MenuAcusacion="*uid://dxlr3efu8c8bj"
 MusicaGlobal="*uid://2b7qouf3r3mg"
 PuzzleBiblioteca="*uid://d2oi0x6vm1vud"
+<<<<<<< HEAD
 PuzzleCocina="*uid://7avc4i12gd42"
 PuzzleDormitorio="*uid://b7vitp5uhsajk"
+=======
+DialogueManager="*uid://c3rodes2l3gxb"
+>>>>>>> 69d23e9 (SIZE: M | FEAT: Escena de introducción del juego con sus animaciones y dialogos)
 
 [display]
 
@@ -31,6 +35,10 @@ window/size/viewport_height=270
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [input]
 
@@ -63,6 +71,10 @@ mover_derecha={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://assets/dialogos/untitled.dialogue", "res://assets/dialogos/personaje1.dialogue", "res://assets/dialogos/personaje2.dialogue", "res://assets/dialogos/personaje3.dialogue", "res://assets/dialogos/jugador.dialogue", "res://assets/dialogos/personaje4.dialogue")
 
 [physics]
 
